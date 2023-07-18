@@ -1,20 +1,13 @@
-import { fireList, charList } from "./consts";
-import { reduceRight } from "./methods/reduceRight";
-import { delayedConsoleOutput } from "./methods/delayedConsoleOutput";
-import { divider } from "./methods/divider";
-
 // ≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖
-// Executuion methods
+// Implementing reduceRight function without using reduce and reverse methods.
 // ≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖≖
 
-reduceRight<string>(
-  charList,
-  (acc, value) => {
-    const result = acc + value;
-    return result;
-  },
-  ""
-);
-divider();
-
-delayedConsoleOutput(fireList);
+export const reduceRight = <T>(
+  charList: T[],
+  callback: (acc: T, value: T) => T,
+  initAcc: T
+): T => {
+  const result = charList.reduceRight(callback, initAcc);
+  process.stdout.write(`Final result: ${result}`);
+  return result;
+};

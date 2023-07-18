@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "description": "Taxdome test task",
   "main": "dist/app.js",
-  "type": "module",
   "scripts": {
     "start": "node dist/app.js",
     "build": "tsc"
@@ -20,6 +19,7 @@
   },
   "homepage": "https://github.com/ainkhm/taxdome_test/#readme",
   "devDependencies": {
+    "@types/node": "^20.4.2",
     "typescript": "^5.1.6"
   }
 }

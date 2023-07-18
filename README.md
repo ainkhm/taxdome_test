@@ -1,3 +1,4 @@
+![taxdome_test](https://github.com/ainkhm/taxdome_test/blob/main/.github/cover.jpg?raw=true)
 # Solution for the Taxdome test task
 
 This repository contains solutions to the tasks required for the Taxdome hiring process.
