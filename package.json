@@ -1,0 +1,25 @@
+{
+  "name": "taxdome_test",
+  "version": "0.0.1",
+  "description": "Taxdome test task",
+  "main": "dist/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node dist/app.js",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ainkhm/taxdome_test.git"
+  },
+  "keywords": [],
+  "author": "Andrii Khmelovskyi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ainkhm/taxdome_test/issues"
+  },
+  "homepage": "https://github.com/ainkhm/taxdome_test/#readme",
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}
